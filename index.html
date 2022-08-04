@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="is-preload">
+	<!--<body class="is-preload"> -->
 
 		<!-- Header -->
 			<div id="header">
@@ -29,8 +29,8 @@
 						<nav id="nav">
 							<ul>
 								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
 								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -53,14 +53,12 @@
 
 		<!-- Main -->
 			<div id="main">
-
 				<!-- Intro -->
-					<section id="top" class="one dark cover">
+					<section id="top" >
+                       <span class="image"><img src="images/linkedin_final.png" alt="" /></span>
 						<div class="container">
 							<header>
-								<span class="image avatar48"><img src="images/Oracle.jpg" alt="" /></span>
-								<h2 class="alt"> Hey! I'm <strong>Pooja Shivani</strong>, a <strong>Site Realibilty Engineer</strong> at<br />
-								 Oracle <a></a></h2>
+							<!--	<h2 class="alt"> Hey! I'm <strong>Pooja Shivani</strong> </h2> -->
 								<p>Ex-Nokia | Industry Expert Guest Lecturer | Youtuber |<br />
 								    Content Creator | Vlogger | Speaker </p>
 							</header>
@@ -68,6 +66,23 @@
 							<footer>
 								<a href="#portfolio" class="button scrolly">Projects</a>
 							</footer>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image pooja"><img src="images/Pooja.jpg" alt="" /></a>
+
+
+							<p>A Engineer with a keen interest in knowing your data in new ways and discovering insights.
+Unleashing the endless possibilities in data, its datasets, databases, related analytics, administration, visualization and debugging.</p>
 
 						</div>
 					</section>
@@ -130,21 +145,7 @@
 						</div>
 					</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
 
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/Pooja.jpg" alt="" /></a>
-
-							<p>A Engineer with a keen interest in knowing your data in new ways and discovering insights.
-Unleashing the endless possibilities in data, its datasets, databases, related analytics, administration, visualization and debugging.</p>
-
-						</div>
-					</section>
 
 				<!-- Contact -->
 					<section id="contact" class="four">
@@ -164,7 +165,7 @@ Unleashing the endless possibilities in data, its datasets, databases, related a
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
 									<div class="col-12">
-										<input type="submit" value="Send Message" />
+										<a href = "mailto:poojashivani.sta@gmail.com?subject = Feedback&body = Message"><h3>Submit</h3></a>
 									</div>
 								</div>
 							</form>

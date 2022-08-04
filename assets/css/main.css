@@ -1768,6 +1768,13 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			width: 100%;
+			height: 25%;
+		}
+        .image.pooja {
+			display: block;
+			margin-left: auto;
+            margin-right: auto;
+            width: 40%;
 		}
 
 		.image.featured {
