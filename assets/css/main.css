@@ -1774,7 +1774,12 @@ input, select, textarea {
 			display: block;
 			margin-left: auto;
             margin-right: auto;
-            width: 40%;
+            width: 100%;
+		}
+
+		.image.linkedin {
+			max-height: 500px;
+			width: auto;
 		}
 
 		.image.featured {
@@ -1996,6 +2001,7 @@ input, select, textarea {
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
+			color: #cbcbcb;
 		}
 
 			.item header h3 {
