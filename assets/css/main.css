@@ -1774,13 +1774,23 @@ input, select, textarea {
 			display: block;
 			margin-left: auto;
             margin-right: auto;
-            width: 100%;
 		}
 
 		.image.linkedin {
 			max-height: 500px;
 			width: auto;
 		}
+		.column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
 		.image.featured {
 			display: block;
