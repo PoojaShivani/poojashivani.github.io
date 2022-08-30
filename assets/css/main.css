@@ -1806,10 +1806,9 @@ input, select, textarea {
 		}
         .image.pooja {
 			display: block;
-			margin-left: auto;
-            margin-right: auto;
-			height: 50%;
-			width:100%;
+			width: 100%;
+			height: 70%;
+
 		}
 
 		.image.linkedin {
