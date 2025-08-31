@@ -79,6 +79,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<li><a href="#successtory" id="successtory-link" onclick="document.getElementById('successtory').scrollIntoView({ behavior: 'smooth' }); return false;"><span class="icon solid fa-user">Success Story</span></a></li>
 								<li><a href="#certifications" id="certification-link" onclick="document.getElementById('certifications').scrollIntoView({ behavior: 'smooth' }); return false;"><span class="icon solid fa-user">Certifications</span></a></li>
 								<li><a href="#project" id="project-link" onclick="document.getElementById('project').scrollIntoView({ behavior: 'smooth' }); return false;"><span class="icon solid fa-user">Project</span></a></li>
+								<li><a href="#blog" id="blog-link" onclick="document.getElementById('blog').scrollIntoView({ behavior: 'smooth' }); return false;"><span class="icon solid fa-cog">Blogs and Vlogs</span></a></li>
 								<li><a href="#contact" id="contact-link" onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' }); return false;"><span class="icon solid fa-envelope">Contact</span></a></li>
 							</ul>
 						</nav>
@@ -804,6 +805,92 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 							#project .container > div {
 								flex-direction: column;
 								gap: 24px;
+							}
+						}
+					</style>
+				</section>
+
+				<!-- Blogs and Vlogs -->
+				<section id="blog" class="three" style="background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%); padding: 60px 0;">
+					<div class="container" style="max-width: 900px; margin: 0 auto; text-align: center;">
+						<header>
+							<h2 style="font-size: 2.3em; font-weight: 700; color: #2d3748; margin-bottom: 18px; letter-spacing: 1.5px;">
+								<span style="background: linear-gradient(90deg, #4f8cff, #a259c6); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Blogs & Vlogs</span>
+							</h2>
+							<p style="font-size: 1.15em; color: #4a5568; margin-bottom: 32px;">
+								Explore my latest blogs and vlogs on technology, AI, and personal growth.
+							</p>
+						</header>
+						<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+							<div class="blog-card" style="background: #fff; border-radius: 18px; box-shadow: 0 6px 24px rgba(80,80,120,0.13); overflow: hidden; max-width: 340px; min-width: 260px; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s, box-shadow 0.3s;">
+								<a href="https://www.youtube.com/channel/UCRIOqT-gd0CUsPSijnwV2yQ" target="_blank" rel="noopener">
+									<img src="images/Vlog.png" alt="Vlog Channel" style="width:100%; height:180px; object-fit:cover; border-radius: 0 0 12px 12px;">
+								</a>
+								<div class="blog-headline" style="padding: 18px 16px 14px 16px; font-size: 1.13em; color: #4f4f6b; font-weight: 600; text-align: center;">
+									My Youtube Channel<br>
+									<a href="https://www.youtube.com/channel/UCRIOqT-gd0CUsPSijnwV2yQ" target="_blank" rel="noopener" style="color: #4f8cff; text-decoration: underline;">Watch on YouTube</a>
+								</div>
+							</div>
+							<div class="blog-card" style="background: #fff; border-radius: 18px; box-shadow: 0 6px 24px rgba(80,80,120,0.13); overflow: hidden; max-width: 340px; min-width: 260px; display: flex; flex-direction: column; align-items: center; transition: transform 0.3s, box-shadow 0.3s;">
+								<a href="https://medium.com/@poojashivani/you-get-what-you-throw-back-ad26872b57eb" target="_blank" rel="noopener">
+									<img src="images/Blog.png" alt="Medium Blog" style="width:100%; height:180px; object-fit:cover; border-radius: 0 0 12px 12px;">
+								</a>
+								<div class="blog-headline" style="padding: 18px 16px 14px 16px; font-size: 1.13em; color: #4f4f6b; font-weight: 600; text-align: center;">
+									My Blogs on Medium<br>
+									<a href="https://medium.com/@poojashivani/you-get-what-you-throw-back-ad26872b57eb" target="_blank" rel="noopener" style="color: #4f8cff; text-decoration: underline;">Read on Medium</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<style>
+						#blog .blog-card {
+							transition: transform 0.3s, box-shadow 0.3s;
+						}
+						#blog .blog-card:hover {
+							transform: translateY(-10px) scale(1.04) rotate(-2deg);
+							box-shadow: 0 12px 32px rgba(80,80,120,0.18), 0 3px 12px rgba(80,80,120,0.13);
+						}
+						#blog .blog-card img {
+							transition: filter 0.3s, transform 0.3s;
+						}
+						#blog .blog-card:hover img {
+							filter: brightness(1.08) saturate(1.15) blur(0.5px);
+							transform: scale(1.03) rotate(1deg);
+						}
+						#blog .blog-headline {
+							font-size: 1.13em;
+							font-weight: 600;
+							color: #4f4f6b;
+							text-align: center;
+							padding: 18px 16px 14px 16px;
+							min-height: 70px;
+							background: linear-gradient(90deg, #f8fafc 60%, #e0e7ef 100%);
+							border-radius: 0 0 18px 18px;
+						}
+						@media (max-width: 900px) {
+							#blog .blog-card {
+								max-width: 95vw;
+								min-width: 180px;
+							}
+							#blog .blog-card img {
+								height: 120px;
+							}
+						}
+						@media (max-width: 600px) {
+							#blog .container {
+								padding: 0 8px;
+							}
+							#blog .blog-card {
+								max-width: 98vw;
+								min-width: 120px;
+								margin-bottom: 18px;
+							}
+							#blog .blog-card img {
+								height: 90px;
+							}
+							#blog .blog-headline {
+								font-size: 1em;
+								padding: 12px 8px 10px 8px;
 							}
 						}
 					</style>
